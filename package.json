@@ -1,0 +1,30 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack-dev-server --progress -p",
+    "watch": "webpack-dev-server --progress --colors --hot --inline",
+    "server": "webpack-dev-server --open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mvedataydin/restaurant-page.git"
+  },
+  "author": "M. Vedat AYDIN",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mvedataydin/restaurant-page/issues"
+  },
+  "homepage": "https://github.com/mvedataydin/restaurant-page#readme",
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.39.2",
+    "webpack-cli": "^3.3.6",
+    "webpack-dev-server": "^3.8.0"
+  }
+}
