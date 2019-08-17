@@ -14,6 +14,7 @@ const createDom = () => {
 
   let h1Title = document.createElement('h1');
   h1Title.textContent = "V É D A T 'S";
+  h1Title.classList.add('title');
   leftDiv.appendChild(h1Title);
 
   // create top right tabs
@@ -22,27 +23,27 @@ const createDom = () => {
   headerDiv.appendChild(rightDiv);
 
   let orderTab = document.createElement('a');
-  orderTab.classList.add('hover-color','right-nav');
+  orderTab.classList.add('hover-color', 'right-nav', 'order');
   orderTab.textContent = 'Order Now';
   rightDiv.appendChild(orderTab);
 
   let homeTab = document.createElement('a');
-  homeTab.classList.add('hover-color','right-nav');
+  homeTab.classList.add('hover-color','right-nav', 'home');
   homeTab.textContent = 'Home';
   rightDiv.appendChild(homeTab);
 
   let galleryTab = document.createElement('a');
-  galleryTab.classList.add('hover-color','right-nav');
+  galleryTab.classList.add('hover-color', 'right-nav', 'gallery');
   galleryTab.textContent = 'Gallery';
   rightDiv.appendChild(galleryTab);
 
   let storyTab = document.createElement('a');
-  storyTab.classList.add('hover-color','right-nav');
+  storyTab.classList.add('hover-color', 'right-nav', 'story');
   storyTab.textContent = 'Story';
   rightDiv.appendChild(storyTab);
 
   let visitTab = document.createElement('a');
-  visitTab.classList.add('hover-color','right-nav');
+  visitTab.classList.add('hover-color', 'right-nav', 'visit');
   visitTab.textContent = 'Visit';
   rightDiv.appendChild(visitTab);
 
@@ -64,17 +65,17 @@ const createDom = () => {
   bodyDiv.appendChild(adressText);
 
   let eatTabMid = document.createElement('a');
-  eatTabMid.classList.add('mid-nav');
+  eatTabMid.classList.add('mid-nav', 'eat-mid');
   eatTabMid.textContent = 'EAT';
   bodyDiv.appendChild(eatTabMid);
   
   let drinkTabMid = document.createElement('a');
-  drinkTabMid.classList.add('mid-nav');
+  drinkTabMid.classList.add('mid-nav', 'drink-mid');
   drinkTabMid.textContent = 'DRINK';
   bodyDiv.appendChild(drinkTabMid);
 
   let visitTabMid = document.createElement('a');
-  visitTabMid.classList.add('mid-nav');
+  visitTabMid.classList.add('mid-nav', 'visit-mid');
   visitTabMid.textContent = 'VISIT';
   bodyDiv.appendChild(visitTabMid);
 
