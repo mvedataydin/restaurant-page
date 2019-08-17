@@ -1,3 +1,3 @@
-console.log('test!')
-var content = document.getElementById('content');
+import { createDom } from './modules/createDom.js'
 
+createDom();
