@@ -12,10 +12,10 @@ const createDom = () => {
   leftDiv.classList.add('left');
   headerDiv.appendChild(leftDiv);
 
-  let h1Title = document.createElement('h1');
-  h1Title.textContent = "V É D A T 'S";
-  h1Title.classList.add('title');
-  leftDiv.appendChild(h1Title);
+  let brand = document.createElement('a');
+  brand.textContent = "V É D A T 'S";
+  brand.classList.add('title');
+  leftDiv.appendChild(brand);
 
   // create top right tabs
   let rightDiv = document.createElement('div');
@@ -37,10 +37,6 @@ const createDom = () => {
   galleryTab.textContent = 'Gallery';
   rightDiv.appendChild(galleryTab);
 
-  let storyTab = document.createElement('a');
-  storyTab.classList.add('hover-color', 'right-nav', 'story');
-  storyTab.textContent = 'Story';
-  rightDiv.appendChild(storyTab);
 
   let visitTab = document.createElement('a');
   visitTab.classList.add('hover-color', 'right-nav', 'visit');
@@ -61,7 +57,7 @@ const createDom = () => {
   
   let adressText = document.createElement('p');
   adressText.classList.add('adress');
-  adressText.textContent = '123 Fake Street — Seattle, WA — 206-555-7890'
+  adressText.textContent = '001 Some Street — London, UK — 079 7897 0336';
   bodyDiv.appendChild(adressText);
 
   let eatTabMid = document.createElement('a');
